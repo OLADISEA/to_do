@@ -14,7 +14,7 @@ class _HomeState extends State<Home>{
   List<MyToDos> toDoItem = [];
   List<MyToDos> foundSearchItem = [];
   // List<MyToDos> reverseList = [];
-  bool addButton = false;
+  
 
 
   @override
@@ -41,7 +41,7 @@ class _HomeState extends State<Home>{
     }
     setState(() {
       foundSearchItem = output;
-      addButton = false;
+      
     });
   }
   @override
@@ -169,7 +169,7 @@ class _HomeState extends State<Home>{
                         TextButton(
                           onPressed: () {
                             setState(() {
-                              addButton = true;
+                              
                               foundSearchItem.insert(0,MyToDos(text: newTodo));
                             });
 
